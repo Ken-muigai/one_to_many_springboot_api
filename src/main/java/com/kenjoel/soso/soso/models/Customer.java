@@ -20,5 +20,6 @@ public class Customer {
 
     @OneToMany(targetEntity = Products.class, cascade = CascadeType.ALL)
     @JoinColumn(name = "cp_fk", referencedColumnName = "id")
-    private List<Products> mProducts;
+    private List<Products> products;
+
 }

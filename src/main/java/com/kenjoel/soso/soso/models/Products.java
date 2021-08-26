@@ -4,8 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -16,9 +14,9 @@ import javax.persistence.Id;
 @Entity
 public class Products {
     @Id
-    private int pid;
+    private String pid;
     private String productName;
-    private int qty;
-    private int price;
+    private String qty;
+    private String price;
 
 }
